@@ -12,15 +12,19 @@ public class Arrayclass {
         return 0;
     }
 
-    public static void main(String[] args)
-    {
-        int[] arr = {1, 1, 2,4, 4, 5, 5, 6, 6};
-        int result = search(arr, 0, arr.length-1);
+    public static void main(String[] args) {
+        int[] arr ={ 4, 6, 7,1,2};
+        int x = 1;
+        /*int result = search(arr, 0, arr.length-1);
         if(result == 0)
         {
             System.out.println("No such element exists");
         }
         else
             System.out.println("element is " + result);
+    }*/
+        ArrayRotation ar = new ArrayRotation();
+        int pivot = ar.findPivotElement(arr,x,arr.length-1);
+        System.out.println("element is " + pivot);
     }
 }
